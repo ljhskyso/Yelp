@@ -1,66 +1,65 @@
-### Basic Yelp client
+# Project 2 - Yelp!
 
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
+Yelp! is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-### Sample response
+Time spent: 9 hours spent in total
 
-```
-businesses =     (
-                {
-            categories =             (
-                                (
-                    Thai,
-                    thai
-                )
-            );
-            "display_phone" = "+1-415-931-6917";
-            id = "lers-ros-thai-san-francisco";
-            "image_url" = "http://s3-media2.ak.yelpcdn.com/bphoto/IStxUNVdfuPR2ddDAIPk_A/ms.jpg";
-            "is_claimed" = 1;
-            "is_closed" = 0;
-            location =             {
-                address =                 (
-                    "730 Larkin St"
-                );
-                city = "San Francisco";
-                "country_code" = US;
-                "cross_streets" = "Olive St & Ellis St";
-                "display_address" =                 (
-                    "730 Larkin St",
-                    "(b/t Olive St & Ellis St)",
-                    Tenderloin,
-                    "San Francisco, CA 94109"
-                );
-                neighborhoods =                 (
-                    Tenderloin
-                );
-                "postal_code" = 94109;
-                "state_code" = CA;
-            };
-            "menu_date_updated" = 1387658025;
-            "menu_provider" = "single_platform";
-            "mobile_url" = "http://m.yelp.com/biz/lers-ros-thai-san-francisco";
-            name = "Lers Ros Thai";
-            phone = 4159316917;
-            rating = 4;
-            "rating_img_url" = "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png";
-            "rating_img_url_large" = "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png";
-            "rating_img_url_small" = "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png";
-            "review_count" = 1154;
-            "snippet_image_url" = "http://s3-media4.ak.yelpcdn.com/photo/D40HpcJt-O6Ll654S_--6w/ms.jpg";
-            "snippet_text" = "Fantastic pad-see-ew. Super rich, flavorful sauce and plenty of ginormous prawns, especially for a $12 price tag in San Francisco. I went through a pretty...";
-            url = "http://www.yelp.com/biz/lers-ros-thai-san-francisco";
-        }
-    );
-    region =     {
-        center =         {
-            latitude = "37.7703124";
-            longitude = "-122.43647245575";
-        };
-        span =         {
-            "latitude_delta" = "0.06424638000000016";
-            "longitude_delta" = "0.07145348265001417";
-        };
-    };
-    total = 760;
-```
+## User Stories
+
+The following **required** functionality is completed:
+
+- [Y] Search results page
+   - [Y] Table rows should be dynamic height according to the content height.
+   - [Y] Custom cells should have the proper Auto Layout constraints.
+   - [Y] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
+- [Y] Filter page. Unfortunately, not all the filters are supported in the Yelp API.
+   - [Y] The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
+   - [Y] The filters table should be organized into sections as in the mock.
+   - [Y] You can use the default UISwitch for on/off states.
+   - [Y] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
+   - [Y] Display some of the available Yelp categories (choose any 3-4 that you want).
+
+The following **optional** features are implemented:
+
+- [N] Search results page
+   - [N] Infinite scroll for restaurant results.
+   - [N] Implement map view of restaurant results.
+- [N] Filter page
+   - [N] Implement a custom switch instead of the default UISwitch.
+   - [N] Distance filter should expand as in the real Yelp app
+   - [N] Categories should show a subset of the full list with a "See All" row to expand. Category list is [here](http://www.yelp.com/developers/documentation/category_list).
+- [N] Implement the restaurant detail page.
+
+The following **additional** features are implemented:
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+@dropbox - gif @ https://www.dropbox.com/s/ut7divoko26cxih/HW2.gif?dl=0
+
+@dropbox - quicktimes video @ https://www.dropbox.com/s/7x42gh93f1p6jbx/HW2.mov?dl=0
+
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+## License
+
+    Copyright [2015] [Jiheng Lu]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
