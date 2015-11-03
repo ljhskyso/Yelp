@@ -41,6 +41,8 @@ Here's a walkthrough of implemented user stories:
 
 @dropbox - quicktimes video @ https://www.dropbox.com/s/7x42gh93f1p6jbx/HW2.mov?dl=0
 
+@imgur - gif @ http://imgur.com/MUgTWLc
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
