@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMR-k6-Ppy">
+                        <rect key="frame" x="263" y="6" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="WCG-TP-4IW"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPh-44-ufj">
+                        <rect key="frame" x="15" y="11.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tPh-44-ufj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="44n-Rr-emN"/>
+                    <constraint firstItem="JMR-k6-Ppy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="RHx-NJ-pWv"/>
+                    <constraint firstAttribute="bottom" secondItem="JMR-k6-Ppy" secondAttribute="bottom" constant="6.5" id="feP-fi-kFJ"/>
+                    <constraint firstItem="tPh-44-ufj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nhG-9F-QSg"/>
+                    <constraint firstAttribute="trailing" secondItem="JMR-k6-Ppy" secondAttribute="trailing" constant="8" id="pgs-Ja-Ue0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="tPh-44-ufj" id="qMT-u5-JWw"/>
+                <outlet property="toggleSwitch" destination="JMR-k6-Ppy" id="wWW-48-a9w"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
