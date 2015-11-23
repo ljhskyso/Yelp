@@ -17,4 +17,4 @@ So, what is your life, and what is your plan? LetMeKnow!!
 
 ## The Pitch
 
-	LetMeKnow! helps customers to simplify their lives, organize their plan, and empower their ability to be on track as planned. We are dedicated to bring the intelligence born from technology to save users from drowning into too many options/information/tasks. Users deserve to know what they want to know and ONLY what they want to know.
+LetMeKnow! helps customers to simplify their lives, organize their plan, and empower their ability to be on track as planned. We are dedicated to bring the intelligence born from technology to save users from drowning into too many options/information/tasks. Users deserve to know what they want to know and ONLY what they want to know.
