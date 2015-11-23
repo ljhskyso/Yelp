@@ -1,20 +1,67 @@
-# Groupon_iOS_Training_Project
-This is the REPO for the Groupon's iOS Training Project.
+# Project 2 - Yelp!
 
-LetMeKnow!
+Yelp! is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-This is an IFTTT-like, event-triggering notification-based platform. Customers can ask the system to LET HIM KNOW when something happened/happening.
-	
-## Concept idea advertisement
+Time spent: 9 hours spent in total
 
-A traditional to-do list is based on Time, i.e., when 10am alter me to do something. But nowadays, the world is much more complicated, moving much quicker, and more and more events are happening way faster than you would expect. The fact is that, it might have been out of your imagination.
-How can you organize your life/work/events based on TIME any more? You need something new, something smart, something can understand your life:
-	THIS IS LetMeKnow! !
-LetMeKnow! is an event-driven notification-based platform. IF THIS THEN LetMeKnow!. You can simply set up what YOU want to know. For example, LetMeKnow! when any merchant has a deal that iPad can be bought at the price of $350; or, LetMeKnow! when Groupon’s stock price reach back to $50 or drop down to $1; or, LetMeKnow! when I am around any sort of Pharmacy and I want to buy a medicine.
-Or, you can set up something much more complicated, which just like your life: LetMeKnow! when I am around a Pharmacy and the store happens to have a deal on my medicine; or, LetMeKnow! when [Chanel’s powder OR Dior’s lipstick OR any of SK-II has a deal more than 20% off] AND at the same time, my credit-card has available balance more than $1000 AND no future payment needed for at least 15 days. Something like that. This is like your real life, and LetMeKnow! understands your life.
-Price checking is just one part of our intelligence, LetMeKnow! will Let You Know about a lot more, including Weather, News Trends, Public Transportation Schedule, Route Traffic, Movie Plans, etc.
-So, what is your life, and what is your plan? LetMeKnow!!
+## User Stories
 
-## The Pitch
+The following **required** functionality is completed:
 
-	LetMeKnow! helps customers to simplify their lives, organize their plan, and empower their ability to be on track as planned. We are dedicated to bring the intelligence born from technology to save users from drowning into too many options/information/tasks. Users deserve to know what they want to know and ONLY what they want to know.
+- [Y] Search results page
+   - [Y] Table rows should be dynamic height according to the content height.
+   - [Y] Custom cells should have the proper Auto Layout constraints.
+   - [Y] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
+- [Y] Filter page. Unfortunately, not all the filters are supported in the Yelp API.
+   - [Y] The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
+   - [Y] The filters table should be organized into sections as in the mock.
+   - [Y] You can use the default UISwitch for on/off states.
+   - [Y] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
+   - [Y] Display some of the available Yelp categories (choose any 3-4 that you want).
+
+The following **optional** features are implemented:
+
+- [N] Search results page
+   - [N] Infinite scroll for restaurant results.
+   - [N] Implement map view of restaurant results.
+- [N] Filter page
+   - [N] Implement a custom switch instead of the default UISwitch.
+   - [N] Distance filter should expand as in the real Yelp app
+   - [N] Categories should show a subset of the full list with a "See All" row to expand. Category list is [here](http://www.yelp.com/developers/documentation/category_list).
+- [N] Implement the restaurant detail page.
+
+The following **additional** features are implemented:
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+@dropbox - gif @ https://www.dropbox.com/s/ut7divoko26cxih/HW2.gif?dl=0
+
+@dropbox - quicktimes video @ https://www.dropbox.com/s/7x42gh93f1p6jbx/HW2.mov?dl=0
+
+@imgur - gif @ http://imgur.com/MUgTWLc
+
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+## License
+
+    Copyright [2015] [Jiheng Lu]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
